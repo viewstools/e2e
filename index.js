@@ -21,7 +21,7 @@ const get = (id, ...scopes) => ({ all = false, $in = browser, index } = {}) => {
 
   scopes.forEach(scope => {
     el[scope] = () =>
-      getElBySelector($in, `${idSelector}[${key}*="${scope}|"`, index);
+      getElBySelector($in, `${idSelector}[${key}*="${scope}|"`, index, all);
   });
 
   return el;
