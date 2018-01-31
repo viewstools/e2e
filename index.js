@@ -4,7 +4,8 @@ const get = (id, ...scopes) => () => {
   const el = browser.element(`[${key}*="${id}|"]`);
 
   scopes.forEach(scope => {
-    el[scope] = () => browser.element(`[${key}="${id}|"][${key}="${scope}|"]`);
+    el[scope] = () =>
+      browser.element(`[${key}*="${id}|"][${key}*="${scope}|"]`);
   });
 
   return el;
