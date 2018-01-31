@@ -1,6 +1,6 @@
 {
   "name": "@viewstools/e2e",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Views Tools E2E helpers",
   "main": "lib.js",
   "repository": "https://github.com/viewstools/e2e",
