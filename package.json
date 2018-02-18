@@ -5,10 +5,24 @@
   "main": "lib.js",
   "repository": "https://github.com/viewstools/e2e",
   "license": "BSD-3-Clause",
+  "bin": {
+    "views-e2e": "./cli.js"
+  },
   "devDependencies": {
     "buble": "^0.18.0"
   },
   "scripts": {
     "prepare": "npx buble index.js --no modules > lib.js"
+  },
+  "dependencies": {
+    "babel-register": "^6.26.0",
+    "wdio": "^1.0.3",
+    "wdio-appium-service": "^0.2.3",
+    "wdio-dot-reporter": "^0.0.9",
+    "wdio-jasmine-framework": "^0.3.2",
+    "wdio-selenium-standalone-service": "^0.0.9"
+  },
+  "peerDependencies": {
+    "@viewstools/morph": "^12.0.3"
   }
 }
